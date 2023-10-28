@@ -1,0 +1,307 @@
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24ClassicType-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes jelly {
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+  
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+  
+    75% {
+      transform: scale(0.95, 1.05);
+    }
+  }
+
+*{
+    font-family: 'Cafe24Oneprettynight';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100vh;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-family: 'Cafe24ClassicType-Regular';
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+.aponicsmodel{
+    margin-top: 120px;
+    padding: 20px;
+    background: linear-gradient(to right, #33daff00 40%, #4ac7e3);
+}
+
+.aponicsmodel_title{
+    font-family: 'Cafe24ClassicType-Regular';
+    position: absolute;
+    top: 180px;
+    right: 200px;
+    font-size: 65px;
+}
+
+.aponicsmodel_inf_div{
+    position: absolute;
+    width: 800px;
+    top: 280px;
+    right: 20px;
+    text-align: center;
+}
+
+.aponicsmodel_inf{
+    font-size: 30px;
+}
+
+.aponicsmodel_inf_high{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-family: 'omyu_pretty';
+}
+
+.aponicsmodel_advantages{
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(to left, #33daff00, #084d64 90%);
+}
+
+.aponicsmodel_advantages_title{
+    color:#ebfbff;
+    font-family: 'Cafe24ClassicType-Regular';
+    position: absolute;
+    top: 710px;
+    left: 160px;
+    font-size: 65px;
+}
+
+.aponicsmodel_advantages_inf{
+    font-size:40px;
+    color:white;
+    width: 500px;
+    position: relative;
+}
+
+.aponicsmodel_advantages_inf_high{
+    font-size:45px;
+    color:black;
+    width: 800px;
+    position: relative;
+    font-family: 'omyu_pretty';
+}
+
+.product{
+    margin: 50px auto;
+    height: 140px;
+    width: 1200px;
+    margin-top: 60px;
+    border-top: 2px solid rgb(146, 146, 146);
+    border-bottom: 2px solid rgb(146, 146, 146);
+}
+
+.product_price{
+    position: relative;
+    bottom: 142px;
+    left: 228px;
+    height: 40px;
+    width: 300px;
+    font-size: 23px;
+}
+
+.product_img{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 120px;
+    width: 120px;
+}
+
+.product_img_css{
+    height: 120px;
+    width: 120px;
+    object-fit: contain;
+}
+
+.product_name{
+    position: relative;
+    bottom: 110px;
+    left: 140px;
+    height: 40px;
+    width: 300px;
+}
+
+.product_name_font{
+    font-family: 'omyu_pretty';
+    font-size: 35px;
+}
+
+.product_description{
+    position: relative;
+    bottom: 174px;
+    left: 140px;
+    height: 55px;
+    width: 1050px;
+}
+
+.product_description_font{
+    font-size: 26px;
+}
+
+@keyframes ring {
+    0% {
+        width: 20px;
+        height: 20px;
+        opacity: 1;
+    }
+    100% {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+
+.btn {
+    position: relative;
+    bottom: 190px;
+    left: 348px;
+    height: 28px;
+    width: 45px;
+    font-size: 26px;
+    border: none;
+    min-width: 130px;
+    min-height: 40px;
+    background: linear-gradient(
+        90deg,
+        rgb(129, 198, 230) 0%,
+        rgb(79, 181, 209) 100%
+    );
+    border-radius: 1000px;
+    color: rgb(47, 65, 79);
+    cursor: pointer;
+    box-shadow: 12px 12px 24px rgba(79, 159, 209, 0.64);
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.btn:hover::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 6px solid #0091ff;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1s infinite;
+}
+
+h3.dev_name{
+    font-family: 'Cafe24ClassicType-Regular';
+    color: black;
+    font-size: 60px;
+    font-weight: 500;
+    display: inline;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-bottom: 1px solid black;
+}
+
+.dev_inf{
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#dev_span1{
+    position: absolute;
+    top: 120px;
+    left : 380px;
+}
+
+#dev_span2{
+    position: absolute;
+    top: 400px;
+    left : 380px;
+}
+
+#dev_span3{
+    position: absolute;
+    top: 120px;
+    right : 380px;
+}
+
+#dev_span4{
+    position: absolute;
+    top: 400px;
+    right : 380px;
+}
